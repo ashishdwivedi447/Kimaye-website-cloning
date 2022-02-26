@@ -1,0 +1,34 @@
+#footer{
+    display:flex;
+    margin-left: 100px;
+    
+}
+#social_media_image{
+    display: flex;
+    margin-left: 700px;
+    
+}
+h4{
+    margin-left: 715px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+img{
+    margin-right: 15px;
+}
+#footer>div>ul{
+    list-style: none;
+}
+#footer>div>ul>li{
+    font-weight: bolder;
+    font-size: 22px;
+}
+p{
+    margin-left: 100px;
+}
+footer{
+    background-color: rgb(125,156,91);
+}
+hr{
+    background-color: black;
+}

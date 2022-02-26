@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    #main{
+        background-color: rgb(239,239,235);
+        
+    }
+    #different-catag-name{
+        display:flex;
+        margin-top: 40px;
+        margin-left: 500px;
+    }
+    .fruits-name-tag{
+        margin-right: 20px;
+    }
+    #location-noofprod{
+        margin-top: 100px;
+        display: flex;
+        
+    }
+
+    #firstinfo{
+    display:flex;
+    gap: 5px;
+    }
+    #append-prod{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .addtocart{
+     width:400px;
+     height:50px;
+     font-size: 25px;
+     color:white;
+     background-color: darkgreen;
+     border-radius: 10px;
+     display: none;
+    }
+    .main_div:hover .addtocart{
+        cursor: pointer;
+        display:block;
+    }
+    .prod_image{
+        height:450px;
+        width:400px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .product_name_tag{
+        font-size: 20px;
+        margin-left: 60px;
+        cursor: pointer;
+    }
+    .price_tag{
+        color:rgb(205,23,31);
+        font-size: 40px;
+        margin-left: 130px;
+    }
+    #top{
+        background-color: darkgreen;
+        height:40px;
+        align-content: center;
+    }
+    #down{
+        display:flex;
+        height:80px;
+        background-color: rgb(238,238,234);
+        
+    }
+    #navbar{
+        display:flex;
+        margin-left: 38px;
+        position:relative;
+    }
+    #search_login_bag_icon{
+        display: flex;
+        margin-left: 450px;
+        
+    }
+    #search_login_bag_icon>div{
+        
+        margin-left: 20px;
+        padding-top: 12px;
+        cursor: pointer;
+        
+    }
+.left_nav{
+    height:35px;
+}
+.search-icon{
+    height:30px;
+}
+#navbar>div{
+    margin-left: 25px;
+    padding-top: 15px;
+    font-weight:5px;
+    font-size: 25px;
+    cursor: pointer♦;
+}
+#kimaye_image>img{
+    height:50px;
+    margin-left: 425px;
+    padding-top: 10px;
+}
+#sign-div  {
+    
+    position: absolute;
+    display: none;
+    margin-left: 1452px;
+    
+    width:350px;
+    margin-top: 0%;
+    
+    }
+    #topinfo{
+        display:flex;
+        background-color: black;
+        color:whitesmoke;
+        gap:170px;
+        cursor: pointer;
+        
+    }
+    #sign-name{
+        font-size: 38px;
+    }
+    #closein{
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    #closeup{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    #details{
+        background-color: whitesmoke;
+    }
+    #details>input{
+        margin-left: 30px;
+        height:37px;
+        width:297px;
+        
+    }
+    label{
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    #loginbtn{
+        height:30px;
+        width:300px;
+        background-color: whitesmoke;
+        margin-left: 30px
+    }
+    #passtag{
+        margin-left: 30px;
+    }
+    .social{
+        height:30px;
+        margin-left: 95px;
+        
+        
+    }
+    .socialbtnfb{
+        width:300px;
+        height:38px;
+        margin-left: 30px;
+        background-color: blue;
+        color: whitesmoke;
+        font-size: 13px;
+        border:none;
+        padding-bottom: 5px;
+    }
+    .socialbtng{
+        width:300px;
+        height:40px;
+        margin-left: 30px;
+        background-color: red;
+        color: whitesmoke;
+        border:none;
+        font-size: 15px;
+    }
+    .loginicon{
+        height:50px;
+        margin-left: 150px;
+    }
+    #text{
+    width:250px;
+    justify-content: center;
+    margin-left: 50px;
+    }
+    #accbtn{
+        width:300px;
+        height:40px;
+        margin-left: 30px;
+    }
+    #signupdiv  {
+    
+    position: absolute;
+    display: none;
+    margin-left: 1452px;
+    
+    width:350px;
+    margin-top: 0%;
+    
+    }
+    #sign-login{
+        cursor: pointer;
+        height:37px;
+        width:297px;
+        margin-left: 30px;
+    }
+    #registerbtn{
+        cursor: pointer;
+        height:37px;
+        width:297px;
+        margin-left:30px;
+        background-color: whitesmoke;
+    }
+    #popupdiv{
+        margin-left: 30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width:140px;
+        
+        display: none;
+        cursor: pointer;
+        position:absolute;
+        background-color: whitesmoke;
+    }
+    .toggledisp>p{
+        margin-left: 0%;
+    }
+    .toggledisp:hover,p{
+        color:green;
+    }
+    .toggledisp>a{
+        text-decoration: none;
+        margin-left: 0%;
+        padding-left: 0%;
+        
+    }
+    #popupdivsec{
+        margin-left: 90px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width:140px;
+        
+        display: none;
+        cursor: pointer;
+        position:absolute;
+        background-color: whitesmoke;
+    }
+    .toggledispsec>p{
+        margin-left: 0%;
+    }
+    .toggledispsec:hover,p{
+        color:green;
+    }
+    #dropdowndiv{
+        display:flex;
+        gap:30px;
+    }
+
+    #footer{
+        display:flex;
+        margin-left: 100px;
+        
+    }
+    #social_media_image{
+        display: flex;
+        margin-left: 700px;
+        
+    }
+    h4{
+        margin-left: 715px;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    img{
+        margin-right: 15px;
+    }
+    #footer>div>ul{
+        list-style: none;
+    }
+    #footer>div>ul>li{
+        font-weight: bolder;
+        font-size: 22px;
+    }
+    p{
+        margin-left: 100px;
+    }
+    footer{
+        background-color: rgb(125,156,91);
+    }
+    hr{
+        background-color: black;
+    }
+</style>
+<body>
+    <header></header>
+    <div id="main">
+        <div id="different-catag-name">
+            <div>
+                <p class="fruits-name-tag">ALL FRUITS</p>
+            </div>
+            <div>
+                <p class="fruits-name-tag" style="text-decoration: underline;">FRESH-CUTS</p>
+            </div>
+            <div>
+                <p class="fruits-name-tag">FRUIT COMBOS</p>
+            </div>
+            <div>
+                <p class="fruits-name-tag">GIFTS BY KIMAYE</p>
+            </div>
+        </div>
+        <div id="location-noofprod">
+            <div id="firstinfo">
+                <div style="margin-left:125px;"><i class="fa fa-home"></i> Home</div>
+                 <div>/</div>
+                <div>Fresh cuts</div>
+            </div>
+            <div id="secinfo" style="margin-left: 940px;">Showing all 4 results</div>
+        </div>
+        
+        <div id="append-prod">
+       <!-- append-product here -->
+        </div>
+
+        <div id="different-catag-name">
+            <div>
+                <p class="fruits-name-tag">ALL FRUITS</p>
+            </div>
+            <div>
+                <p class="fruits-name-tag" style="text-decoration: underline;">FRESH-CUTS</p>
+            </div>
+            <div>
+                <p class="fruits-name-tag">FRUIT COMBOS</p>
+            </div>
+            <div>
+                <p class="fruits-name-tag">GIFTS BY KIMAYE</p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer></footer>
+</html>
+
+<script src="./scripts/fresh-cuts.js">
+    
+</script>
+
+
+<script type="module">
+    import { header, footer } from "./components/header-footer.js";
+ document.querySelector("footer").innerHTML = footer();
+ document.querySelector("header").innerHTML = header();
+
+
+ document.querySelector("#login").addEventListener("click",()=>{
+   document.querySelector("#sign-div").style.display="block";
+})
+
+document.querySelector("#closein").addEventListener("click",()=>{
+   document.querySelector("#sign-div").style.display="none";
+})
+
+document.querySelector("#accbtn").addEventListener("click",()=>{
+   document.querySelector("#sign-div").style.display="none";
+   document.querySelector("#signupdiv").style.display="block";
+})
+
+document.querySelector("#closeup").addEventListener("click",()=>{
+   document.querySelector("#signupdiv").style.display="none";
+})
+
+document.querySelector("#sign-login").addEventListener("click",()=>{
+   document.querySelector("#signupdiv").style.display="none";
+   document.querySelector("#sign-div").style.display="block";
+})
+
+//    Register part
+
+document.querySelector("#registerbtn").addEventListener("click",register);
+var userdata=JSON.parse(localStorage.getItem("userdatabase"))||[];
+function register(){
+  var firstname=document.querySelector("#fname").value;
+  var lastname=document.querySelector("#lname").value;
+  var email=document.querySelector("#email").value;
+  var password=document.querySelector("#password").value;
+  
+  
+  var usercred={
+      fname:firstname,
+      lname:lastname,
+      emailId:email,
+      pass:password,
+      
+  };
+
+  userdata.push(usercred);
+  localStorage.setItem("userdatabase",JSON.stringify(userdata));
+  window.location.href="landing.html";
+}
+
+    // login part
+
+    document.querySelector("#loginbtn").addEventListener("click",login);
+var regduser=JSON.parse(localStorage.getItem("userdatabase"));
+
+function login(){
+    var email=document.querySelector("#email").value;
+
+    var password=document.querySelector("#password").value;
+
+    let user_found=false;
+    for(var i=0;i<regduser.length;i++){
+        if(regduser[i].emailId===email && regduser[i].pass===password){
+            user_found=true;
+            window.location.href="account.html";
+
+        }
+    }
+    if(user_found===false){
+    alert("wrong credientials");
+    }
+}
+
+
+// dropdown functionallity---->
+
+document.querySelector("#shop").addEventListener("mouseover",()=>{
+    document.querySelector("#popupdivsec").style.display="none";
+document.querySelector("#popupdiv").style.display="block";
+})
+document.querySelector(".toggledisp").addEventListener("mouseleave",()=>{
+document.querySelector("#popupdiv").style.display="none";
+})
+
+document.querySelector("#learn").addEventListener("mouseover",()=>{
+    document.querySelector("#popupdiv").style.display="none";
+document.querySelector("#popupdivsec").style.display="block";
+})
+document.querySelector(".toggledispsec").addEventListener("mouseleave",()=>{
+document.querySelector("#popupdivsec").style.display="none";
+})
+</script>
+

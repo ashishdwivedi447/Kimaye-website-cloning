@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #payment-div{
+            display:flex;
+            gap:150px;
+        }
+        button{
+            margin-left: 300px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-div">
+        <h1>Payment Option</h1>
+        <div id="payment-div">
+            <div id="1stdiv">
+          <input type="checkbox"> <label>Debit card</label><br><br>
+          
+
+          <input type="checkbox">  <label>Credit card</label> <br><br>
+          <input type="checkbox">  <label>Credit Card EMI</label> <br><br>
+          <input type="checkbox">  <label>Net Banking</label> <br><br>
+          <input type="checkbox">  <label>UPI</label>  <br><br>
+          <input type="checkbox">   <label>Wallet</label> <br><br>
+            </div>
+            <div id="2nddiv">
+           <input type="text" placeholder="Name on Card" id="name">
+           <br><br>
+           <input type="Number" placeholder="Card Number" id="cardnum"><br><br>
+           <input type="date" placeholder="Expiry Date" id="exp"><br><br>
+           <input type="text" placeholder="CVV CODE" id="cvv">
+            </div>
+        </div>
+
+        <button>PAY</button>
+    </div>
+</body>
+</html>
+<script>
+    var name=document.querySelector("#name").value
+    var card=document.querySelector("#cardnum").value
+    var exp=document.querySelector("#exp").value
+    var cvv=document.querySelector("#cvv").value
+    
+
+    document.querySelector("button").addEventListener("click",()=>{
+        if(name==null||card==null||exp==null||cvv==null){
+            alert("please Fill the The Required Field")
+        }
+        else{
+            window.location.href="success.html"
+        }
+    })
+    console.log(name,card,exp,cvv)
+    
+</script>

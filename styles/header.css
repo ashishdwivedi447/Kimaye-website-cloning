@@ -1,0 +1,199 @@
+#top{
+    background-color: darkgreen;
+    height:50px;
+    align-content: center;
+}
+#down{
+    display:flex;
+    height:80px;
+    background-color: rgb(238,238,234);
+    
+}
+#navbar{
+    display:flex;
+    margin-left: 38px;
+    position:relative;
+}
+#search_login_bag_icon{
+    display: flex;
+    margin-left: 470px;
+    
+}
+#search_login_bag_icon>div{
+    
+    margin-left: 20px;
+    padding-top: 12px;
+    cursor: pointer;
+    
+}
+.left_nav{
+height:35px;
+}
+.search-icon{
+height:30px;
+}
+#navbar>div{
+margin-left: 25px;
+padding-top: 15px;
+font-weight:5px;
+font-size: 25px;
+cursor: pointer♦;
+}
+#kimaye_image>img{
+height:50px;
+margin-left: 425px;
+padding-top: 10px;
+}
+#sign-div  {
+
+position: absolute;
+display: none;
+margin-left: 1452px;
+
+width:350px;
+margin-top: 0%;
+height:100%;
+
+}
+#topinfo{
+    display:flex;
+    background-color: black;
+    color:whitesmoke;
+    gap:170px;
+    cursor: pointer;
+    
+}
+#sign-name{
+    font-size: 38px;
+}
+#closein{
+    font-size: 24px;
+    padding-top: 10px;
+}
+#closeup{
+    font-size: 18px;
+    padding-top: 10px;
+}
+#details{
+    background-color: whitesmoke;
+}
+#details>input{
+    margin-left:30px;
+    height:37px;
+    width:297px;
+}
+label{
+    margin-left:30px;
+    font-size:25px;
+}
+#loginbtn{
+    height:30px;
+    width:300px;
+    background-color: whitesmoke;
+    margin-left: 30px
+}
+#passtag{
+    margin-left: 30px;
+}
+.social{
+    height:30px;
+    margin-left: 95px;
+    
+    
+}
+.socialbtnfb{
+    width:300px;
+    height:38px;
+    margin-left: 30px;
+    background-color: blue;
+    color: whitesmoke;
+    font-size: 13px;
+    border:none;
+    padding-bottom: 5px;
+}
+.socialbtng{
+    width:300px;
+    height:40px;
+    margin-left: 30px;
+    background-color: red;
+    color: whitesmoke;
+    border:none;
+    font-size: 15px;
+}
+.loginicon{
+    height:50px;
+    margin-left: 150px;
+}
+#text{
+width:250px;
+justify-content: center;
+margin-left: 50px;
+}
+#accbtn{
+    width:300px;
+    height:40px;
+    margin-left: 30px;
+}
+#signupdiv  {
+
+position: absolute;
+display: none;
+margin-left: 1452px;
+
+width:350px;
+margin-top: 0%;
+
+}
+#sign-login{
+    cursor: pointer;
+    margin-left: 30px;
+    height:37px;
+    width:297px;
+}
+#registerbtn{
+    cursor: pointer;
+    height:37px;
+    width:297px;
+    margin-left: 30px;
+    background-color: whitesmoke;
+}
+#popupdiv{
+    margin-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:140px;
+    
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: whitesmoke;
+}
+.toggledisp>p{
+    margin-left: 0%;
+}
+.toggledisp:hover,p{
+    color:green;
+}
+.toggledisp>a{
+    text-decoration: none;
+    margin-left: 0%;
+}
+#popupdivsec{
+    margin-left: 90px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:140px;
+    
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: whitesmoke;
+}
+.toggledispsec>p{
+    margin-left: 0%;
+}
+.toggledispsec:hover,p{
+    color:green;
+}
+#dropdowndiv{
+    display:flex;
+    gap:30px;
+}

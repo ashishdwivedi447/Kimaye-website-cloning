@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-div">
+        <h1>Payment</h1>
+        <p>All transactions are secure and encrypted.</p>
+        <img src="https://lh3.googleusercontent.com/16OdeU3Lo8j9E42Mt9Yv3jtJfcJOy10baLMudhcQ6FhFNgGAWTC4u38cH3Al-Iq7dsRFr1GlRHkNxwCpiNC__WTKs7g_0GOvSAZIXcro" alt="">
+
+        <div>
+            <h1>Billing address</h1>
+            <p>Select the address that matches your card or payment method.</p>
+            <div>
+                <input type="checkbox" style="border: radius 100px;">
+                <label for="">Same as shipping address</label>
+                <br>
+                <input type="checkbox" style="border-radius: 100px;">
+                <label for="">Use a different billing address</label>
+            </div>
+        </div>
+        <br><br>
+        <button>Complete Order</button>
+        <label for="" style="margin-left: 15px;"><a href="" style="text-decoration:none;color:red">Return to shipping</a></label>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",()=>{
+        window.location.href="payment.html"
+    })
+</script>
