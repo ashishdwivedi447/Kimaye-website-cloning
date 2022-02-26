@@ -20,7 +20,7 @@ document.querySelector("#append-cart-item").innerHTML=""
      button.innerText="✕"
 
      button.addEventListener("click",()=>{
-        cartsum_afterdeletion(cartitems,index)
+        
          deletetask(index);
      })
 
@@ -84,7 +84,7 @@ document.querySelector("#append-cart-item").innerHTML=""
 
      document.querySelector("#append-cart-item").append(rowdiv);
  })
- carttotal(cartitems);
+ 
 }
 
        function deletetask(index){
@@ -97,7 +97,7 @@ document.querySelector("#append-cart-item").innerHTML=""
            displaycart(cartitems);
            
        }
-        
+       
        function carttotal(cartitems){
        for(let i=0;i<cartitems.length;i++){
            total+=cartitems[i].price;
@@ -106,7 +106,7 @@ document.querySelector("#append-cart-item").innerHTML=""
        }
 
 
-      
+       carttotal(cartitems);
        let total1=document.createElement("p");
        total1.innerText=`Subtotal:₹${total} ` 
        total1.style.fontSize="35px"
